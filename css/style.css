@@ -1,0 +1,403 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+button:focus
+{
+   outline: none;
+}
+.navbar.scrolled{
+    background: #000 !important;
+    transition: 0.5s;
+}
+body
+{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    overflow-x: hidden;
+}
+header
+{
+    width: 100vw;
+    height: 100vh;
+    background: url('../img/img4.jpg');
+    background-size: cover;
+    background-position: center;
+}
+header::before
+{
+    content: '';
+    width: 100vw;
+    height: 400px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: linear-gradient(180deg, rgba(0,0,0,1) 40%, rgba(0,0,0,0) );
+}
+header::after
+{
+    content: '';
+    width: 100vw;
+    height: 100px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: linear-gradient(0deg, rgba(0,0,0,1) 40%, rgba(0,0,0,0) );
+}
+.navbar-brand
+{
+    color: #fff;
+    font-weight: 600;
+    font-size: 25px;
+}
+.right
+{
+    position: absolute;
+    right: 10%;
+}
+.nav
+{
+    color: #ffffff;
+    background: rgba(0,0,0,0.9);
+    z-index: 111111111;
+    position: fixed;
+    width: 100%;
+}
+.navbar-expand-lg .navbar-nav .nav-link
+{
+    color: #fff;
+}
+.navbar-expand-lg .navbar-nav .nav-link:hover
+{
+    color: #000000;
+    background: #fff;
+}
+.navbar-toggler-icon
+{
+    color: #fff;
+}
+button img
+{
+    width: 30px;
+    height: 30px;
+}
+.transparent
+{
+    background: transparent;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+    text-align: center;
+    width: 90%;
+}
+.transparent h1
+{
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 3rem;
+}
+.transparent p
+{
+    font-family: 600;
+    font-size: 18px;
+}
+section
+{
+    width: 100vw;
+}
+.txt-cabeca
+{
+    padding-top: 5vh;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    color: #fff;
+    background: transparent;
+    padding-top: 100px;
+}
+.txt-cabeca h1
+{
+    font-weight: 400;
+    font-size: 2.2rem;
+    padding-bottom: 20px;
+}
+.txt-cabeca p
+{
+    font-size: 17.5px;
+    font-weight: 300;
+}
+#explore
+{
+    width: 100vw;
+    min-height: 50vh;
+    background:#000;
+}
+.cartao
+{
+    width: 100vw;
+    min-height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+.caixa
+{
+    width: 290px;
+    height: 330px;
+    background: #fff;
+    position: relative;
+    box-shadow: 2px 2px 15px rgba(255,255,255,0.4);
+    margin: 50px;
+}
+.caixa img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.caixa .txt
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.9);
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    height: 60px;
+    border-top: thin solid rgba(255,255,255,0.2);
+}
+.txt h4
+{
+    font-size: 22px;
+}
+.txt p
+{
+    font-size: 15px;
+}
+#adventure
+{
+    min-height: 100vh;
+    width: 100vw;
+    background: #000;
+    position: relative;
+}
+#a
+{
+    min-height: 100vh;
+    width: 100vw;
+    background: url('../img/pexels-photo-1366957.jpeg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+#a::before
+{
+    content: '';
+    width: 100vw;
+    height: 300px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: linear-gradient(180deg, rgba(0,0,0,1) 40%, rgba(0,0,0,0) );
+}
+#a::after
+{
+    content: '';
+    width: 100vw;
+    height: 150px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: linear-gradient(0deg, rgba(0,0,0,1) 40%, rgba(0,0,0,0) );
+}
+.rounded-pill
+{
+    border-radius: 50px;
+}
+.cartao2
+{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 100vw;
+    min-height: 50vh;
+    flex-wrap: wrap;
+}
+.caixa2
+{
+    box-shadow: 5px 5px 15px rgba(255,255,255,0.3);
+    max-width: 40%;
+    min-height: 50%;
+    background: #fff;
+    color: #000;
+    position: relative;
+    margin: 30px;
+}
+.caixa2 img
+{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-height: 60%;
+}
+.caixa2 .content
+{
+    width: 95%;
+    margin: auto;
+}
+.caixa2 .content h3
+{
+    font-size: 26px;
+    text-transform: capitalize;
+}
+.caixa2 .content p
+{
+    font-weight: 400;
+}
+.caixa2 .content button
+{
+    float: right;
+    padding-bottom: 10px;
+}
+footer
+{
+    background: #000;
+    min-height: 50vh;
+    background: url('../img/2020-04-03\ 22.38.55.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    padding-bottom: 200px;
+    z-index: 1;
+}
+.form label
+{
+    color: #fff;
+}
+.form-group
+{
+    position: relative;
+}
+.form input,
+.form textarea
+{
+    background: rgba(0,0,0,0.7);
+    border: none;
+    position: relative;
+    border-radius: 0px;
+    color: #fff !important;
+}
+.form span
+{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    bottom: 0;
+    background: rgba(255,255,255,0.4);
+}
+.form input:hover + span,
+.form textarea:hover + span,
+.form input:focus + span,
+.form textarea:focus + span
+{
+    background: #fff;
+}
+.form input:focus,
+.form textarea:focus
+{
+    background: rgba(0,0,0,0.7);
+    outline: none !important;
+    border: none !important;
+    filter: none;
+}
+.form textarea
+{
+    resize: none;
+}
+footer::before
+{
+    content: '';
+    width: 100vw;
+    height: 150px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: linear-gradient(180deg, rgba(0,0,0,1) 40%, rgba(0,0,0,0) );
+}
+footer::after
+{
+    content: '';
+    width: 100vw;
+    height: 150px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: linear-gradient(0deg, rgba(0,0,0,1) 40%, rgba(0,0,0,0) );
+}
+.fallow
+{
+    width: 100%;
+    z-index: 99;
+    position: absolute;
+    text-align: center;
+    bottom: 0;
+}
+.icons i
+{
+    color: #fff;
+    font-size: 1.3rem;
+    margin: 10px;
+}
+.fallow h2
+{
+    font-size: 1.2rem;
+}
+.fallow a
+{
+    color: #fff;
+}
+@media only screen and (max-width: 993px)
+{
+    .right
+    {
+        position: static;
+    }
+    .navbar-nav
+    {
+        background: rgba(0,0,0,0.9);
+    }
+    .txt-cabeca
+    {
+        width: 80%;
+    }
+    .transparent h1
+    {
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: 2.0rem;
+    }
+    .transparent p
+    {
+        font-family: 600;
+        font-size: 14px;
+    }
+    .caixa2
+    {
+        max-width: 80%;
+        height: 100%;
+    }
+    .fallow h2
+    {
+        font-size: .8rem;
+    }
+}
